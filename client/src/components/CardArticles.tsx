@@ -87,6 +87,7 @@ const CardArticles = ({
               alt={img_main_alt}
               layout='fill'
               objectFit='cover'
+              priority
             />
           </Link>
         </CardMedia>

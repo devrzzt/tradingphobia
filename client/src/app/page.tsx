@@ -32,8 +32,8 @@ export default async function Home() {
       <Overview />
 
       {/* SECTION 3 ARTICLES + PAGINATION */}
-      {/* //! FIXME  */}
       <Articles articles={data} />
+      {/* //! FIXME  */}
       <PaginationArticles />
 
       {/* SECTION 4 SUBSCRIPTION */}

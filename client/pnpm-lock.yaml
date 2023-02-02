@@ -12,6 +12,7 @@ specifiers:
   axios: ^1.2.6
   eslint: 8.32.0
   eslint-config-next: 13.1.4
+  mui-markdown: ^0.5.6
   next: 13.1.2
   nextjs-progressbar: ^0.0.16
   react: 18.2.0
@@ -33,6 +34,7 @@ dependencies:
   axios: 1.2.6
   eslint: 8.32.0
   eslint-config-next: 13.1.4_7uibuqfxkfaozanbtbziikiqje
+  mui-markdown: 0.5.6_kltbq54lov77upvopufkdd57sa
   next: 13.1.2_pjwopsidmaokadturxaafygjp4
   nextjs-progressbar: 0.0.16_next@13.1.2+react@18.2.0
   react: 18.2.0
@@ -2412,6 +2414,15 @@ packages:
       yallist: 4.0.0
     dev: false
 
+  /markdown-to-jsx/7.1.9_react@18.2.0:
+    resolution: {integrity: sha512-x4STVIKIJR0mGgZIZ5RyAeQD7FEZd5tS8m/htbcVGlex32J+hlSLj+ExrHCxP6nRKF1EKbcO7i6WhC1GtOpBlA==}
+    engines: {node: '>= 10'}
+    peerDependencies:
+      react: '>= 0.14.0'
+    dependencies:
+      react: 18.2.0
+    dev: false
+
   /merge2/1.4.1:
     resolution: {integrity: sha512-8q7VEgMJW4J8tcfVPy8g09NcQwZdbwFEqhe/WZkoIzjn/3TGDwtOCYtXGxA3O8tPzpczCCDgv+P2P5y00ZJOOg==}
     engines: {node: '>= 8'}
@@ -2462,6 +2473,26 @@ packages:
 
   /ms/2.1.3:
     resolution: {integrity: sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==}
+    dev: false
+
+  /mui-markdown/0.5.6_kltbq54lov77upvopufkdd57sa:
+    resolution: {integrity: sha512-JYgfPQtWlVt9ltGA83BFp/tEV7zIHCZjLO40NojNCYdwLj6+lM9kdR82Ke11HZQhVlX4iunjnyik9r5FLiY94w==}
+    peerDependencies:
+      '@emotion/react': ^11.7.1
+      '@emotion/styled': ^11.6.0
+      '@mui/material': ^5.3.0
+      markdown-to-jsx: ^7.1.6
+      prism-react-renderer: ^1.2.1
+      react: '>= 17.0.2'
+      react-dom: '>= 17.0.2'
+    dependencies:
+      '@emotion/react': 11.10.5_yxdp3dl3eazy3vwpbmv4fq727a
+      '@emotion/styled': 11.10.5_4erqsq3n444jecyuvaxwc5b3vi
+      '@mui/material': 5.11.6_rqh7qj4464ntrqrt6banhaqg4q
+      markdown-to-jsx: 7.1.9_react@18.2.0
+      prism-react-renderer: 1.3.5_react@18.2.0
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
     dev: false
 
   /nanoid/3.3.4:
@@ -2742,6 +2773,14 @@ packages:
   /prelude-ls/1.2.1:
     resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==}
     engines: {node: '>= 0.8.0'}
+    dev: false
+
+  /prism-react-renderer/1.3.5_react@18.2.0:
+    resolution: {integrity: sha512-IJ+MSwBWKG+SM3b2SUfdrhC+gu01QkV2KmRQgREThBfSQRoufqRfxfHUxpG1WcaFjP+kojcFyO9Qqtpgt3qLCg==}
+    peerDependencies:
+      react: '>=0.14.9'
+    dependencies:
+      react: 18.2.0
     dev: false
 
   /prop-types/15.8.1:
