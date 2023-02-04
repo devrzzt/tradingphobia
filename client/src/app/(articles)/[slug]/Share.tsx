@@ -10,13 +10,13 @@ const Share = () => {
       <Typography
         variant='overline'
         fontSize={11.7}
-        fontWeight={700}
+        fontWeight={800}
         display='flex'
         alignSelf='center'
+        color='text.secondary'
         mr={2}
         sx={{
           letterSpacing: { xs: 0.4, lg: 0.9 },
-          color: '#0EA5E9',
         }}
       >
         ¿Quieres compartir?
