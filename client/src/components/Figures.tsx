@@ -87,7 +87,7 @@ const Figures = () => {
               </List>
             </nav>
           </Box>
-          <Box display='flex' flexDirection='column' mx={9}>
+          <Box display='flex' flexDirection='column' mx={8}>
             <Button
               variant='outlined'
               color='success'
@@ -174,7 +174,7 @@ const Figures = () => {
               </List>
             </nav>
           </Box>
-          <Box display='flex' flexDirection='column' mx={9}>
+          <Box display='flex' flexDirection='column' mx={8}>
             <Button
               variant='outlined'
               color='warning'
@@ -266,7 +266,7 @@ const Figures = () => {
           <Typography sx={{ lineHeight: 1.7 }} textAlign='left' px={1}>
             Por lo que podría pagar hasta un 4% por transacción.
           </Typography>
-          <Box display='flex' flexDirection='column' mx={9}>
+          <Box display='flex' flexDirection='column' mx={8}>
             <Button
               variant='outlined'
               color='primary'
