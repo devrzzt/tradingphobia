@@ -1,5 +1,6 @@
 import { Box, Container, Grid, Typography } from '@mui/material'
 
+//* COMPONENTS
 import Navbar from '@/components/Navbar'
 import MenuMobile from '@/components/MenuMobile'
 import Presentation from '@/components/Presentation'
@@ -11,12 +12,18 @@ import Facts from '@/components/Facts'
 import Figures from '@/components/Figures'
 import Fixtures from '@/components/Fixtures'
 import Feedback from '@/components/Feedback'
-import { getArticles } from '@/api/getArticles'
 
+//* API
+import { getArticles } from '@/api/getArticles'
+import { getFixtures } from '@/api/getFixtures'
+
+//* MODELS
 import { IArticles } from '@/models/articles'
+import { IFixtures } from '@/models/fixtures'
 
 export default async function Home() {
   const { data }: { data: IArticles[] } = await getArticles()
+  const fixtures: { data: IFixtures[] } = await getFixtures()
 
   return (
     <>
@@ -46,7 +53,7 @@ export default async function Home() {
       <Figures />
 
       {/* FIXTURES */}
-      {/* <Fixtures /> */}
+      <Fixtures fixtures={fixtures.data} />
 
       {/* SECTION 8 FEEDBACK */}
       <Feedback />
