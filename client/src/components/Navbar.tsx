@@ -9,65 +9,61 @@ const Navbar = () => {
 
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <Box sx={{ flexGrow: 1 }}>
-        <AppBar
-          elevation={0}
-          position='static'
-          sx={{ mt: 2, px: 1, backgroundColor: '#10172A', color: '#000' }}
-        >
-          <Toolbar sx={{ display: 'flex', justifyContent: 'space-between' }}>
-            <Button
-              onClick={() => router.push('/')}
-              sx={{ textTransform: 'lowercase' }}
-            >
-              {/* <Box
+      <AppBar
+        elevation={0}
+        position='static'
+        sx={{ mt: 2, px: 1 }}
+        color='transparent'
+      >
+        <Toolbar sx={{ display: 'flex', justifyContent: 'space-between' }}>
+          <Button
+            onClick={() => router.push('/')}
+            sx={{ textTransform: 'lowercase' }}
+          >
+            {/* <Box
                 sx={{
                   mr: 1.4,
                   mt: 0.4,
                   transform: 'rotate(-20deg)',
                 }}
               > */}
-              {/* <Image
+            {/* <Image
                 src='/img_navbar.png'
                 width={28}
                 height={28}
                 alt=''
                 priority
               /> */}
-              {/* </Box> */}
+            {/* </Box> */}
 
-              <Typography
-                className='textHeader'
-                variant='h6'
-                noWrap
-                component='div'
-                sx={{
-                  flexGrow: 1,
-                  display: {
-                    sm: 'block',
-                    fontWeight: '600',
-                    color: '#37BCF8',
-                    fontSize: 24,
-                    letterSpacing: 1.2,
-                    fontFamily: 'Frijole',
-                  },
-                  textAlign: { xs: 'center', md: 'left' },
-                }}
-              >
-                tradingphobia.com
-              </Typography>
-            </Button>
-            <Box
-              flexDirection='row'
+            <Typography
+              className='textHeader'
+              variant='h6'
+              noWrap
+              component='div'
+              color='text.secondary'
               sx={{
-                display: { xs: 'none', sm: 'flex' },
+                flexGrow: 1,
+                display: { sm: 'block' },
+                fontWeight: 200,
+                fontSize: 26,
+                letterSpacing: 1.2,
+                textAlign: { xs: 'center', md: 'left' },
               }}
             >
-              <Menu />
-            </Box>
-          </Toolbar>
-        </AppBar>
-      </Box>
+              tradingphobia.com
+            </Typography>
+          </Button>
+          <Box
+            flexDirection='row'
+            sx={{
+              display: { xs: 'none', sm: 'flex' },
+            }}
+          >
+            <Menu />
+          </Box>
+        </Toolbar>
+      </AppBar>
     </Box>
   )
 }

@@ -1,39 +1,21 @@
 'use client'
 //
-import { Avatar, Box, Grid, Link, Typography, makeStyles } from '@mui/material'
-// import second from '@mui/styles'
+import { Avatar, Box, Grid, Link, Typography } from '@mui/material'
 import Image from 'next/legacy/image'
 
-function getRandomInt(min: number, max: number) {
-  return Math.floor(Math.random() * (max - min)) + min
-}
-
-//! FIXME
-// const useStyles = makeStyles({
-//   changeColor: {
-//     backgroundColor: () => {
-//       switch (getRandomInt(0, 5)) {
-//         case 0:
-//           return '#f5d0fe'
-//         case 1:
-//           return '#a5f3fc'
-//         case 2:
-//           return '#a7f3d0'
-//         case 3:
-//           return '#d9f99d'
-//         case 4:
-//           return '#fecaca'
-
-//         default:
-//           break
-//       }
-//     },
-//   },
-// })
-
-const CardFixtures = () => {
-  //   const classes = useStyles()
-
+const CardFixtures = ({
+  title,
+  description,
+  image,
+  image_alt,
+  bgColor,
+}: {
+  title: string
+  description: string
+  image: string
+  image_alt: string
+  bgColor: string
+}) => {
   return (
     <Grid
       item
@@ -49,11 +31,11 @@ const CardFixtures = () => {
     >
       <Link href='#' underline='none' color='CaptionText'>
         <Box
-          //   className={classes.changeColor}
           sx={{
             width: 276,
             height: 104,
-            borderRadius: 2,
+            borderRadius: 6,
+            backgroundColor: `#${bgColor}`,
           }}
         >
           <Grid
@@ -81,12 +63,10 @@ const CardFixtures = () => {
             >
               <Avatar sx={{ width: 70, height: 70, background: 'none' }}>
                 <Image
-                  src='/img_card_fixtures_1.png'
-                  // width={70}
-                  // height={70}
+                  src={'http://localhost:1337' + image}
                   layout='fill'
                   objectFit='cover'
-                  alt=''
+                  alt={image_alt}
                   priority
                 />
               </Avatar>
@@ -107,11 +87,9 @@ const CardFixtures = () => {
                   variant='h6'
                   sx={{ fontWeight: '800', fontSize: 16 }}
                 >
-                  Criptomonedas
+                  {title}
                 </Typography>
-                <Typography variant='body2'>
-                  Lorem ipsum dolor sit amet consectetur.
-                </Typography>
+                <Typography variant='body2'>{description}</Typography>
               </Box>
             </Grid>
           </Grid>

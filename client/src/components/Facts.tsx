@@ -14,7 +14,7 @@ import Image from 'next/legacy/image'
 const Facts = () => {
   return (
     <>
-      <Grid container sx={{ mt: 12, position: 'relative', color: '#F7F9FB' }}>
+      <Grid container sx={{ mt: 12, position: 'relative', color: '#fff' }}>
         <Grid item md={12}>
           <Card elevation={0} sx={{}}>
             <CardMedia
@@ -26,12 +26,9 @@ const Facts = () => {
             >
               <Image
                 src='/img_facts.svg'
-                // width={1920}
-                // height={1381}
-                alt='Trader analizando el comportamiento del mercado'
+                alt='un cohete con el logo de bitcoin'
                 layout='fill'
                 objectFit='cover'
-                priority
               />
             </CardMedia>
           </Card>
@@ -41,7 +38,10 @@ const Facts = () => {
             position: 'absolute',
             width: { xs: 'auto', md: '50%' },
             height: { xs: '100%', md: '100%' },
-            backgroundColor: 'rgba(16, 23, 42, .8)',
+            backgroundColor: {
+              xs: 'rgb(30 41 59)',
+              md: 'rgba(16, 23, 42, .7)',
+            },
           }}
         >
           <Box sx={{ height: '100%', px: { xs: 1, md: 6 } }}>
@@ -77,7 +77,7 @@ const Facts = () => {
                 </Typography>
                 <Typography
                   sx={{ mt: 2.5, fontSize: 18, mx: 2 }}
-                  color='text.secondary'
+                  color='#94A3B8'
                 >
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
                   illum consectetur magni debitis tempore labore mollitia
@@ -114,8 +114,7 @@ const Facts = () => {
                         src='/img_facts_friendly_platform.png'
                         width={64}
                         height={64}
-                        alt=''
-                        priority
+                        alt='chasquido de dedos'
                       />
                     </Avatar>
                     <Typography
@@ -126,13 +125,13 @@ const Facts = () => {
                         mt: 1,
                         mb: 0.4,
                       }}
-                      color='primary'
+                      color='#fff'
                     >
                       Fácil de usar
                     </Typography>
                     <Typography
                       sx={{ textAlign: 'left', fontSize: 16, fontWeight: 500 }}
-                      color='text.secondary'
+                      color='#94A3B8'
                     >
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Blanditiis, vitae. Lorem ipsum dolor sit amet consectetur
@@ -159,8 +158,7 @@ const Facts = () => {
                         src='/img_facts_fee.png'
                         width={64}
                         height={64}
-                        alt=''
-                        priority
+                        alt='billetes uno detras del otro'
                       />
                     </Avatar>
                     <Typography
@@ -171,13 +169,13 @@ const Facts = () => {
                         mt: 1,
                         mb: 0.4,
                       }}
-                      color='primary'
+                      color='#fff'
                     >
                       Comisiones más bajas
                     </Typography>
                     <Typography
                       sx={{ textAlign: 'left', fontSize: 16, fontWeight: 500 }}
-                      color='text.secondary'
+                      color='#94A3B8'
                     >
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Blanditiis, vitae. Lorem ipsum dolor sit amet consectetur
@@ -204,8 +202,7 @@ const Facts = () => {
                         src='/img_facts_security.png'
                         width={64}
                         height={64}
-                        alt=''
-                        priority
+                        alt='escudo con un candado cerrado superpuesto'
                       />
                     </Avatar>
                     <Typography
@@ -216,13 +213,13 @@ const Facts = () => {
                         mt: 1,
                         mb: 0.4,
                       }}
-                      color='primary'
+                      color='#fff'
                     >
                       Seguridad
                     </Typography>
                     <Typography
                       sx={{ textAlign: 'left', fontSize: 16, fontWeight: 500 }}
-                      color='text.secondary'
+                      color='#94A3B8'
                     >
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Blanditiis, vitae. Lorem ipsum dolor sit amet consectetur
@@ -249,8 +246,7 @@ const Facts = () => {
                         src='/img_facts_crypto.png'
                         width={64}
                         height={64}
-                        alt=''
-                        priority
+                        alt='criptomonedas como bitcoin y ethereum'
                       />
                     </Avatar>
                     <Typography
@@ -261,13 +257,13 @@ const Facts = () => {
                         mt: 1,
                         mb: 0.4,
                       }}
-                      color='primary'
+                      color='#fff'
                     >
                       +Criptomonedas
                     </Typography>
                     <Typography
                       sx={{ textAlign: 'left', fontSize: 16, fontWeight: 500 }}
-                      color='text.secondary'
+                      color='#94A3B8'
                     >
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Blanditiis, vitae elit. Lorem ipsum dolor sit amet
@@ -275,16 +271,24 @@ const Facts = () => {
                     </Typography>
                   </Grid>
                 </Grid>
+                <Box display='flex' justifyContent='center'>
+                  <Typography
+                    variant='overline'
+                    sx={{
+                      display: {
+                        xs: 'none',
+                        md: 'block',
+                      },
+                    }}
+                  >
+                    Image by Satheesh Sankaran from Pixabay
+                  </Typography>
+                </Box>
               </Box>
             </Box>
           </Box>
         </Box>
       </Grid>
-      <Box display='flex' justifyContent='center'>
-        <Typography variant='overline'>
-          Image by Satheesh Sankaran from Pixabay
-        </Typography>
-      </Box>
     </>
   )
 }

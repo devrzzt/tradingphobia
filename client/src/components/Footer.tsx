@@ -113,21 +113,17 @@ const Footer = () => {
                 </Box>
               </Link>
 
-              <Link href='#' underline='hover' color='white'>
-                <Box sx={{ display: 'flex' }} boxShadow={3}>
+              <Link href='/descuentos' underline='hover' color='white'>
+                <Box sx={{ display: 'flex' }}>
                   <Typography
                     variant='caption'
                     sx={{
                       fontSize: 15,
-                      backgroundColor: '#0EA5E9',
+                      backgroundColor: '#38bdf8',
                       px: 1.2,
                       py: 0.1,
                       fontWeight: '600',
-                      color: 'white',
                       borderRadius: 1,
-                      '&:hover': {
-                        backgroundColor: '#48addb',
-                      },
                     }}
                   >
                     Descuentos

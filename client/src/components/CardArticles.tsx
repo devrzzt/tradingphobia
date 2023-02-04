@@ -68,8 +68,8 @@ const CardArticles = ({
           sm: 'flex',
           md: 'flex',
         },
-        borderRadius: 8,
-        backgroundColor: '#1E293B',
+        borderRadius: 6,
+        backgroundColor: 'rgb(255 255 255)',
       }}
     >
       <CardActionArea>
@@ -148,13 +148,13 @@ const CardArticles = ({
                       fontSize: 12,
                       letterSpacing: 0.8,
                     }}
-                    color='secondary'
+                    color='text.secondary'
                     fontWeight={700}
                   >
                     {author}
                     <Typography
                       variant='caption'
-                      color='secondary'
+                      color='text.secondary'
                       ml={0.4}
                       sx={{
                         fontSize: 10.5,
@@ -163,8 +163,6 @@ const CardArticles = ({
                       }}
                     >
                       &middot; {format(published_at, 'my-locale')}
-                      {/* &middot;{' '} */}
-                      {/* {`${time_read}`} */}
                     </Typography>
                   </Typography>
                 </Link>
@@ -229,8 +227,8 @@ const CardArticles = ({
             >
               <Typography
                 color='text.primary'
-                component='div'
                 variant='h6'
+                component='div'
                 sx={{ fontWeight: 'bold', mt: 0.8 }}
               >
                 {title}
@@ -258,7 +256,7 @@ const CardArticles = ({
               </Box>
             </Link>
           </CardActionArea>
-          <Divider sx={{ my: 2, mx: 3, bgcolor: '#94A3B8' }} />
+          <Divider sx={{ my: 2, mx: 3, bgcolor: '#cbd5e1' }} />
           <Tags tag_1={tag_1} tag_2={tag_2} tag_3={tag_3} />
         </CardContent>
       </Box>

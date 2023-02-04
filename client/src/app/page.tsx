@@ -46,7 +46,7 @@ export default async function Home() {
       <Figures />
 
       {/* FIXTURES */}
-      <Fixtures />
+      {/* <Fixtures /> */}
 
       {/* SECTION 8 FEEDBACK */}
       <Feedback />

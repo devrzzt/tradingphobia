@@ -28,17 +28,18 @@ const Overview = () => {
           <Typography
             variant='h2'
             component='h2'
+            color='text.primary'
             sx={{
               fontSize: { xs: 26, md: 34 },
               fontWeight: 800,
-              color: '#fff',
             }}
           >
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
             maxime vitae iusto et neque unde totam ratione voluptatem?
           </Typography>
           <Typography
-            sx={{ mt: 2, fontSize: { xs: 16, md: 18 }, color: '#94A3B8' }}
+            color='text.secondary'
+            sx={{ mt: 2, fontSize: { xs: 16, md: 18 } }}
           >
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique
             fugit quo atque earum corrupti commodi voluptatem, sed quos minima
@@ -48,17 +49,16 @@ const Overview = () => {
             repellendus odio rerum!
           </Typography>
           <Button
-            // className='buttonRobinhood'
             endIcon={<ArrowRightAltIcon />}
-            variant='outlined'
-            color='warning'
+            variant='contained'
+            color='info'
             size='large'
             sx={{
               mt: 4,
-              //
               textTransform: 'capitalize',
               fontSize: 16,
               fontWeight: 600,
+              '&:hover': { backgroundColor: '#8b5cf6' },
             }}
           >
             Aprender más

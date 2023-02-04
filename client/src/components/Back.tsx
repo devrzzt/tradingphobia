@@ -11,6 +11,7 @@ const Back = () => {
   return (
     <Box mt={2} ml={2} display='flex' flexDirection='row'>
       <Button
+        color='secondary'
         size='large'
         startIcon={<KeyboardBackspaceIcon />}
         sx={{

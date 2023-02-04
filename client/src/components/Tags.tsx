@@ -15,20 +15,19 @@ const Tags = ({
     <Stack direction='row' spacing={1} sx={{ my: 1, justifyContent: 'center' }}>
       <Link href='#' underline='hover'>
         <Chip
-          color='primary'
+          color='warning'
           label={`#${tag_1}`}
           variant='filled'
           size='small'
           sx={{
             letterSpacing: 0.3,
-            color: '#fff',
             fontWeight: 500,
           }}
         />
       </Link>
       <Link href='#' underline='hover'>
         <Chip
-          color='secondary'
+          color='default'
           label={`#${tag_2}`}
           variant='filled'
           size='small'
@@ -37,7 +36,7 @@ const Tags = ({
       </Link>
       <Link href='#' underline='hover'>
         <Chip
-          color='secondary'
+          color='default'
           label={`#${tag_3}`}
           variant='filled'
           size='small'

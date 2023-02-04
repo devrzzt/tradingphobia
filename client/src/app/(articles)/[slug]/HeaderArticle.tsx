@@ -23,10 +23,10 @@ const HeaderArticle = ({
   date: string
   time_read: string
 }) => {
-  // * Transforming time_read: "min 5" to "5min"
+  // * Transforming time_read: "min 5" to "5 min"
 
   const words = time_read.split(' ')
-  const time_read_aux = `${words[1]}${words[0]}`
+  const time_read_aux = `${words[1]} ${words[0]}`
 
   return (
     <Box flexDirection='row' display='flex'>
@@ -58,9 +58,10 @@ const HeaderArticle = ({
           </Typography>
           <Box display='flex' flexDirection='row' alignItems='center'>
             <Typography fontSize={13} color='text.secondary'>
-              {format(date, 'my-locale')} &middot; {`${time_read_aux}`}
+              {format(date, 'my-locale')} &middot;{' '}
+              {`${time_read_aux} de lectura`}
             </Typography>
-            <AccessAlarmIcon
+            {/* <AccessAlarmIcon
               sx={{
                 display: 'flex',
                 alignSelf: 'center',
@@ -68,7 +69,7 @@ const HeaderArticle = ({
                 color: 'text.secondary',
                 ml: 0.6,
               }}
-            />
+            /> */}
           </Box>
         </Box>
         {/* JUST SCREEN MD^ */}

@@ -20,27 +20,26 @@ const Presentation = () => {
       <Typography
         variant='h1'
         component='h1'
-        sx={{ fontSize: { xs: 36, md: 60 }, fontWeight: 800, color: '#fff' }}
+        sx={{ fontSize: { xs: 36, md: 60 }, fontWeight: 800 }}
       >
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit agnam.
       </Typography>
       <Typography
+        color='text.secondary'
         sx={{
           fontSize: { xs: 18, md: 18 },
-          color: '#94A3B8',
           mt: 3,
           px: { xs: 0, lg: 16 },
         }}
       >
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime esse
-        voluptate animi.{' '}
+        Lorem ipsum dolor sit amet consectetur, Maxime esse voluptate animi.{' '}
         <Box
           component='span'
           sx={{
             color: '#37BCF8',
           }}
         >
-          Lorem.
+          Lorem consectetur
         </Box>
         {'  '}
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos sequi

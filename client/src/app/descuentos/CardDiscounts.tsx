@@ -37,11 +37,8 @@ const CardDiscounts = ({
         maxWidth: 280,
         borderRadius: 3,
         boxShadow:
-          '0 10px 15px -3px rgb(255 255 255 / 0.1), 0 4px 6px -4px rgb(255 255 255 / 0.1)',
-        '&:hover': {
-          boxShadow:
-            '0 20px 25px -5px rgb(255 255 255 / 0.1), 0 8px 10px -6px rgb(255 255 255 / 0.1)',
-        },
+          '0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)',
+        '&:hover': { boxShadow: ' 0 25px 50px -12px rgb(0 0 0 / 0.25)' },
       }}
     >
       <CardActionArea>
@@ -85,12 +82,12 @@ const CardDiscounts = ({
           </Box>
         </CardMedia>
       </CardActionArea>
-      <CardContent sx={{ bgcolor: '#1e293b' }}>
+      <CardContent sx={{ backgroundColor: 'rgb(241 245 249)' }}>
         <Typography gutterBottom variant='subtitle2' color='text.secondary'>
           <Box
             component='span'
             sx={{
-              color: '#fff',
+              color: 'text.primary',
               fontSize: 16,
               fontWeight: 800,
             }}

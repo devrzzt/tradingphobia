@@ -14,7 +14,7 @@ import ArrowRightAlt from '@mui/icons-material/ArrowRightAlt'
 
 const Figures = () => {
   return (
-    <Box sx={{ mt: 10 }}>
+    <Box sx={{ pt: 4, backgroundColor: 'rgb(15 23 42)' }}>
       <Typography
         sx={{
           textAlign: 'center',
@@ -35,6 +35,7 @@ const Figures = () => {
           fontWeight: 800,
           px: 2,
         }}
+        color='white'
       >
         Tarifa de transacciones (Fee Trade)
       </Typography>
@@ -43,6 +44,7 @@ const Figures = () => {
         sx={{ display: 'flex', justifyContent: 'space-evenly', mt: 10, px: 2 }}
       >
         <Grid
+          color='white'
           border={0.1}
           borderRadius={4}
           item
@@ -58,13 +60,14 @@ const Figures = () => {
             boxShadow: '0 25px 50px -12px rgb(34 197 94  / 0.25)',
           }}
         >
-          <Typography fontSize={72} fontWeight={600} sx={{ color: '#22c55e' }}>
+          {/* <Typography fontSize={72} fontWeight={600} sx={{ color: '#22c55e' }}> */}
+          <Typography fontSize={72} fontWeight={600} sx={{ color: '#4ade80' }}>
             0%
           </Typography>
           <Typography sx={{ lineHeight: 1.7 }} textAlign='left' px={1}>
             <Box
               component='span'
-              sx={{ fontWeight: 600, fontSize: 18, color: '#22c55e' }}
+              sx={{ fontWeight: 600, fontSize: 18, color: '#4ade80' }}
             >
               Robinhood{' '}
             </Box>
@@ -119,6 +122,7 @@ const Figures = () => {
           </Box>
         </Grid>
         <Grid
+          color='white'
           item
           xs={12}
           sm={7}
@@ -143,13 +147,13 @@ const Figures = () => {
             },
           }}
         >
-          <Typography fontSize={72} fontWeight={600} sx={{ color: '#facc15' }}>
+          <Typography fontSize={72} fontWeight={600} sx={{ color: '#fcd34d' }}>
             0.1%
           </Typography>
           <Typography sx={{ lineHeight: 1.7 }} textAlign='left' px={1}>
             <Box
               component='span'
-              sx={{ fontWeight: 600, fontSize: 18, color: '#facc15' }}
+              sx={{ fontWeight: 600, fontSize: 18, color: '#fcd34d' }}
             >
               Binance (US){' '}
             </Box>
@@ -205,6 +209,7 @@ const Figures = () => {
           </Box>
         </Grid>
         <Grid
+          color='white'
           item
           xs={12}
           sm={7}
@@ -229,13 +234,13 @@ const Figures = () => {
             },
           }}
         >
-          <Typography fontSize={72} fontWeight={600} sx={{ color: '#ef4444' }}>
+          <Typography fontSize={72} fontWeight={600} sx={{ color: '#38bdf8' }}>
             0.5%
           </Typography>
           <Typography sx={{ lineHeight: 1.7 }} textAlign='left' px={1}>
             <Box
               component='span'
-              sx={{ fontWeight: 600, fontSize: 18, color: '#ef4444' }}
+              sx={{ fontWeight: 600, fontSize: 18, color: '#38bdf8' }}
             >
               Coinbase{' '}
             </Box>
@@ -264,7 +269,7 @@ const Figures = () => {
           <Box display='flex' flexDirection='column' mx={9}>
             <Button
               variant='outlined'
-              color='error'
+              color='primary'
               size='large'
               sx={{
                 mt: 2,
@@ -279,7 +284,7 @@ const Figures = () => {
             <Button
               variant='contained'
               endIcon={<ArrowRightAlt />}
-              color='error'
+              color='primary'
               size='large'
               sx={{
                 mt: 2,

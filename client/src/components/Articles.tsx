@@ -1,21 +1,22 @@
 'use client'
 import { IArticles } from '@/models/articles'
 //
-import { Grid, Typography } from '@mui/material'
+import { Box, Grid, Typography } from '@mui/material'
 import CardArticles from './CardArticles'
 
 //! Implement function LIKE / DISLIKE articles
 
 const Articles = ({ articles }: { articles: IArticles[] }) => {
   return (
-    <>
-      <Grid container sx={{ pb: 1, px: 2, mt: 14 }}>
+    <Box py={5} mt={6} sx={{ backgroundColor: 'rgb(241 245 249)' }}>
+      <Grid container sx={{ pb: 1, px: 2 }}>
         <Grid item md={2} />
         <Grid item md={6}>
           <Typography
             variant='h2'
             component='h2'
-            sx={{ fontSize: 30, fontWeight: 800 }}
+            color='text.primary'
+            sx={{ fontSize: 30, fontWeight: 600 }}
           >
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti.
           </Typography>
@@ -25,7 +26,7 @@ const Articles = ({ articles }: { articles: IArticles[] }) => {
         <Grid item md={2} />
         <Grid item md={6}>
           <Typography
-            sx={{ fontSize: 18, fontWeight: 600 }}
+            sx={{ fontSize: 18, fontWeight: 400 }}
             color='text.secondary'
           >
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo
@@ -86,7 +87,7 @@ const Articles = ({ articles }: { articles: IArticles[] }) => {
           </Grid>
         ))}
       </Grid>
-    </>
+    </Box>
   )
 }
 

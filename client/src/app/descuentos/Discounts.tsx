@@ -33,16 +33,15 @@ const Discounts = ({ discounts }: { discounts: IDiscounts[] }) => {
         <Grid item xs={12} lg={8}>
           <Box display='flex' flexDirection='row'>
             <Typography
-              fontWeight={800}
+              fontWeight={700}
               fontSize={24}
               sx={{
-                color: '#facc15',
+                color: 'text.primary',
               }}
             >
               Descuentos
             </Typography>
             <FlashOnIcon
-              color='warning'
               sx={{
                 display: 'flex',
                 transform: 'rotate(20deg)',
@@ -53,7 +52,7 @@ const Discounts = ({ discounts }: { discounts: IDiscounts[] }) => {
           </Box>
           <Typography
             mt={0.4}
-            fontWeight={600}
+            fontWeight={500}
             fontSize={18}
             color='text.secondary'
           >

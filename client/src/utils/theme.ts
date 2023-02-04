@@ -2,32 +2,40 @@ import { createTheme } from '@mui/material/styles'
 
 const theme = createTheme({
   palette: {
+    background: {
+      default: 'rgb(248 250 252)',
+    },
     primary: {
-      main: '#0EA5E9',
+      main: '#38bdf8',
       contrastText: '#fff',
     },
     secondary: {
-      main: '#f8fafc',
+      main: '#6b7280',
+      contrastText: '#fff',
     },
     info: {
-      main: '#CB659E',
+      main: '#8b5cf6',
+      contrastText: '#fff',
     },
     success: {
-      main: '#22c55e',
+      main: '#4ade80',
+      contrastText: '#111827',
     },
     warning: {
-      main: '#facc15',
+      main: '#fcd34d',
+      contrastText: '#111827',
     },
     error: {
       main: '#ef4444',
+      contrastText: '#111827',
     },
     text: {
-      primary: '#fff',
-      secondary: '#94A3B8',
+      primary: '#111827',
+      secondary: '#6b7280',
     },
   },
   typography: {
-    fontFamily: ['Inter', 'Frijole'].join(','),
+    fontFamily: ['Inter'].join(','),
   },
 })
 

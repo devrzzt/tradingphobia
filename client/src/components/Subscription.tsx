@@ -14,7 +14,10 @@ const Subscription = () => {
         justifyContent='center'
       >
         <Grid item xs={12} md={6} sx={{}}>
-          <Typography sx={{ fontSize: 36, fontWeight: 800 }}>
+          <Typography
+            color='text.primary'
+            sx={{ fontSize: 36, fontWeight: 800 }}
+          >
             Lorem ipsum dolor sit amet consectetur.
           </Typography>
           <Typography
@@ -35,7 +38,7 @@ const Subscription = () => {
             <Grid container>
               <Button
                 variant='outlined'
-                color='success'
+                color='secondary'
                 size='large'
                 endIcon={<ArrowRightAltIcon />}
                 sx={{
@@ -54,7 +57,7 @@ const Subscription = () => {
               </Button>
               <Button
                 size='large'
-                color='primary'
+                color='warning'
                 variant='contained'
                 sx={{
                   mx: 0.5,
@@ -64,7 +67,7 @@ const Subscription = () => {
                   fontSize: 16,
                   fontWeight: 600,
                   '&:hover': {
-                    backgroundColor: '#37bcf8',
+                    backgroundColor: '#fcd34d',
                   },
                 }}
               >
@@ -77,7 +80,7 @@ const Subscription = () => {
                       variant='body2'
                       sx={{ fontWeight: 800, textAlign: 'left', fontSize: 12 }}
                     >
-                      #1 Coinbase Exchange
+                      #1 Binance Exchange
                     </Typography>
                     <Typography
                       variant='body1'
@@ -93,8 +96,6 @@ const Subscription = () => {
                     <Avatar sx={{ width: 32, height: 32 }}>
                       <Image
                         src='/img_subscription_star.png'
-                        // width={32}
-                        // height={32}
                         layout='fill'
                         objectFit='cover'
                         alt=''
@@ -119,11 +120,11 @@ const Subscription = () => {
             fuga nobis corporis! Quaerat fuga nobis
           </Typography>
           <Typography
-            sx={{ textAlign: { xs: 'left', md: 'center' }, color: '#0EA5E9' }}
+            sx={{ textAlign: { xs: 'left', md: 'center' } }}
             mt={1}
             fontSize={20}
             fontWeight={600}
-            // color='text.secondary'
+            color='text.secondary'
           >
             labore distinctio, accusamus, provident culpa eum iusto culpa eum
             iusto. Nihil
@@ -139,10 +140,10 @@ const Subscription = () => {
               <Grid container>
                 <Grid item xs={12} md={7} component='form' px={1} py={0.8}>
                   <TextField
-                    color='primary'
+                    color='secondary'
                     label='Correo'
                     required
-                    variant='outlined'
+                    variant='standard'
                     fullWidth
                     focused
                   />
@@ -150,7 +151,7 @@ const Subscription = () => {
                 <Grid item xs={12} md={5} px={1} py={0.8}>
                   <Button
                     variant='contained'
-                    color='primary'
+                    color='warning'
                     fullWidth
                     size='large'
                     sx={{
@@ -159,7 +160,7 @@ const Subscription = () => {
                       fontSize: 16,
                       fontWeight: 600,
                       '&:hover': {
-                        backgroundColor: '#37bcf8',
+                        backgroundColor: '#fcd34d',
                       },
                     }}
                   >
