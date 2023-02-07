@@ -35,7 +35,7 @@ const Footer = () => {
           >
             © 2022{' '}
             <Box component='span' color='#0EA5E9'>
-              tradingphobia.com
+              tradingphobia
             </Box>{' '}
             Trading Advices
           </Typography>
