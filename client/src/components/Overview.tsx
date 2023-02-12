@@ -51,7 +51,7 @@ const Overview = () => {
           <Button
             endIcon={<ArrowRightAltIcon />}
             variant='contained'
-            color='info'
+            color='warning'
             size='large'
             sx={{
               mt: 4,
@@ -68,14 +68,21 @@ const Overview = () => {
       <Grid item sx={{ px: 2, mt: { xs: 4 } }} md={5}>
         <Card
           className=''
-          sx={{ width: { xs: 358, md: 450 }, borderRadius: 4 }}
+          sx={{
+            width: { xs: 358, md: 450 },
+            borderRadius: 4,
+            boxShadow:
+              '0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1)',
+          }}
         >
           <CardActionArea>
             <CardMedia sx={{ height: { xs: 420, md: 520 } }}>
               <Image
-                src='/img_overview.png'
+                src='/img_overview.avif'
                 width={680}
                 height={798}
+                layout='fill'
+                objectFit='cover'
                 alt=''
                 priority
               />

@@ -103,13 +103,15 @@ const Presentation = () => {
           sx={{
             width: 1040,
             borderRadius: 4,
+            boxShadow:
+              '0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1)',
           }}
         >
           <CardMedia>
             <Image
-              src='/img_presentation.png'
-              width={1280}
-              height={837}
+              src='/img_presentation.avif'
+              width={2000}
+              height={1312}
               layout='responsive'
               objectFit='contain'
               priority
@@ -127,11 +129,11 @@ const Presentation = () => {
           sx={{
             ml: 1,
             fontSize: 10,
-            color: '#fff',
+            color: 'text.secondary',
           }}
           variant='overline'
         >
-          Image by OpenClipart-Vectors from Pixabay
+          Image from Freepik
           {/* Photo by Skitterphoto from Pexels */}
         </Typography>
       </Box>
