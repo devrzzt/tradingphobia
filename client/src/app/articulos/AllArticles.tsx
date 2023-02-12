@@ -59,8 +59,6 @@ const AllArticles = ({ articles }: { articles: IArticles[] }) => {
           <Grid display='flex' justifyContent='center'>
             <Grid item xs={10} sm={7} md={6} mt={4} mb={2}>
               <TextField
-                // value={query}
-                // onChange={e => setQuery(e.target.value)}
                 onChange={async e => {
                   const { value } = e.currentTarget
                   // Dynamically load fuse.js
